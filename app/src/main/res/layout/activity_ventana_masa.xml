@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ventana_masa">
+
+
+    <Button
+        android:id="@+id/calcularButton"
+        android:layout_width="327dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#002bff"
+        android:text="CALCULAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaEditText2" />
+
+    <EditText
+        android:id="@+id/pesoEditText"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="331dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="168dp"
+        android:background="#FFFFFF"
+        android:text="RESULTADO"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:circularflow_radiusInDP="100%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/resultadpTextView2"
+        android:layout_width="256dp"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="#ff8700"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        tools:text="ICM" />
+
+    <EditText
+        android:id="@+id/alturaEditText2"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:hint="Altura (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoEditText" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="156dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#002bff"
+        android:text="REGRESAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcularButton" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="CALCULADORA DE PESO IDEAL"
+        android:textColor="#ff8700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
